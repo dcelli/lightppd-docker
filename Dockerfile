@@ -14,6 +14,7 @@ RUN echo server.network-backend = \"writev\" >> /etc/lighttpd/lighttpd.conf
 COPY etc/lighttpd/* /etc/lighttpd/
 
 EXPOSE 80
+EXPOSE 8200
 
 VOLUME /var/www/localhost
 VOLUME /etc/lighttpd
